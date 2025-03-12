@@ -8,6 +8,8 @@ ENV N8N_HOST=0.0.0.0
 
 ENV N8N_RUNNERS_ENABLED=true
 
+ENV N8N_RELEASE_DATE=2025-03-12T00:00:00Z
+
 EXPOSE 5678
 
-CMD ["sh", "-c", "n8n start --port ${PORT:-5678}"]
+CMD ["/bin/sh", "-c", "n8n start --port ${PORT:-5678}"]
