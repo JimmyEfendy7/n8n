@@ -9,3 +9,5 @@ ENV N8N_HOST=0.0.0.0
 ENV N8N_RUNNERS_ENABLED=true
 
 EXPOSE 5678
+
+CMD ["sh", "-c", "n8n start --port ${PORT:-5678}"]
